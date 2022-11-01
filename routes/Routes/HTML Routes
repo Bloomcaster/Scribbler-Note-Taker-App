@@ -1,0 +1,15 @@
+
+app.get("/notes", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
+});
+
+app.get("./", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+//make sure this is the right code to export file
+module.exports = app;
