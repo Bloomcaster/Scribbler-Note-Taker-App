@@ -19,4 +19,8 @@ app.use(express.json ());
 app.use(express.static("./public"));
 
 //reading db json converting into an array and how to view each note: API Rounte Section//
-
+app.get("./notes", function(req, res) {
+    readFileAsync("./db/db.json", "utf8").then(function(data) {
+        notes = [].concat(JSON.parse(data))
+    })
+});
