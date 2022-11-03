@@ -19,6 +19,8 @@ write() {
 //get notes function
 
 //add note function
+
+//delete note function?
 }
 
 module.exports = new Store();

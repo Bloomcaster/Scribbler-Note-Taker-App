@@ -16,7 +16,7 @@ app.use(express.json ());
 //static middleware for static files i.e. CSS
 app.use(express.static("public"));
 app.use('/api', apiRoutes);
-api.use('/', htmlRoutes);
+app.use('/', htmlRoutes);
 
 //Setting the server to listen, starts the express server, uses express to listen
 app.listen(PORT, function () {
