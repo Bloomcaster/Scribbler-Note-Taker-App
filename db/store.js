@@ -16,11 +16,7 @@ write(note) {
     return writeFileAsync('db/db.json', JSON.stringify(note))
 };
 
-//get notes function
 
-//add note function
-
-//delete note function?
 }
 
 module.exports = new Store();
