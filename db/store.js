@@ -3,7 +3,7 @@ const util = require('util');
 
 
 //andding asynchonous processes//
-const readFileAsync = util.promisify(fs.readfile);
+const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
 
@@ -12,7 +12,7 @@ class Store {
 read() {
     return readFileAsync('db/db.json', 'utf8')
 };
-write() {
+write(note) {
     return writeFileAsync('db/db.json', JSON.stringify(note))
 };
 
