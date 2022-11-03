@@ -2,7 +2,7 @@ const fs = require('fs');
 const util = require('util');
 
 
-//andling asynchonous processes//
+//andding asynchonous processes//
 const readFileAsync = util.promisify(fs.readfile);
 const writeFileAsync = util.promisify(fs.writeFile);
 

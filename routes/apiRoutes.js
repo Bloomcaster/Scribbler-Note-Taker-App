@@ -1,6 +1,6 @@
 const router = require('express').Router()
 //reading db json converting into an array and how to view each note: API Rounte Section//
-//check file path with tutor!! make sure I am writing this correctly should this say api slash notes??//
+//going to db/db.json files
 router.get("/api/notes", function(req, res) {
     // readFileAsync("./db/db.json", "utf8").then(function(data) {
       //  notes = [].concat(JSON.parse(data))
@@ -23,7 +23,7 @@ router.post("/api/notes", function(req, res) {
 // });
 
 //attempting the delete command for extra credit!!
-//app.delete("./public/notes/:id", function(req, res) {
+//app.delete("../public/notes/:id", function(req, res) {
  //   const scribbleDelete = parseInt(req.params.id);
  //   readFileAsync("./db/db.json", "utf8").then(function(data) {
   //      const notes = [].concat(JSON.parse(data));
@@ -34,7 +34,7 @@ router.post("/api/notes", function(req, res) {
  //           }
  //       }
  //       return scribbleNewNoteData
- //   }).them(function(notes) {
+ //   }).then(function(notes) {
 //        writeFileAsync("./db/dn.json", JSON.stringify(notes))
  //       res.send('Your have created a masterpiece SUCCESS!!');
  //   })
